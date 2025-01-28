@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 20px;
+}
+
+#current-weather,
+#hourly-forecast,
+#forecast,
+#weather-alerts,
+#weather-map,
+#favorites,
+#weather-news,
+#detailed-metrics,
+#clothing-suggestion,
+#air-quality {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather h2,
+#hourly-forecast h2,
+#forecast h2,
+#weather-alerts h2,
+#weather-news h2,
+#detailed-metrics h2,
+#clothing-suggestion h2,
+#air-quality h2 {
+    margin-top: 0;
+}
+
+/* Forecast Styles */
+.forecast-day,
+.hourly-forecast-hour {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.forecast-day p,
+.hourly-forecast-hour p {
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+/* Weather Icon Styles */
+.weather-icon {
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+/* Light and Dark Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #444444;
+}
+
+.dark-mode .search button {
+    background-color: #222222;
+}
+
+.dark-mode #current-weather,
+.dark-mode #hourly-forecast,
+.dark-mode #forecast,
+.dark-mode #weather-alerts,
+.dark-mode #weather-map,
+.dark-mode #favorites,
+.dark-mode #weather-news,
+.dark-mode #detailed-metrics,
+.dark-mode #clothing-suggestion,
+.dark-mode #air-quality {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .forecast-day,
+.dark-mode .hourly-forecast-hour {
+    background-color: #555555;
+}
+
+.dark-mode .forecast-day p,
+.dark-mode .hourly-forecast-hour p,
+.dark-mode #current-weather p,
+.dark-mode #hourly-forecast h2,
+.dark-mode #forecast h2,
+.dark-mode #weather-alerts h2,
+.dark-mode #weather-news h2,
+.dark-mode #detailed-metrics h2,
+.dark-mode #clothing-suggestion h2,
+.dark-mode #air-quality h2 {
+    color: #ffffff;
+}

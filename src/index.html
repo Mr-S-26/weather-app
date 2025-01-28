@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+            <div class="search">
+                <input type="text" id="location" placeholder="Enter city or ZIP code">
+                <button id="search-btn">Search</button>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <main>
+            <div id="current-weather">
+                <!-- Current weather information will be displayed here -->
+            </div>
+            <div id="hourly-forecast">
+                <!-- Hourly weather forecast will be displayed here -->
+            </div>
+            <div id="forecast">
+                <!-- 7-day weather forecast will be displayed here -->
+            </div>
+            <div id="weather-alerts">
+                <!-- Weather alerts will be displayed here -->
+            </div>
+            <div id="weather-map">
+                <!-- Interactive weather map will be displayed here -->
+                <div id="map" style="height: 400px;"></div>
+            </div>
+            <div id="favorites">
+                <!-- Favorite locations will be displayed here -->
+            </div>
+            <div id="weather-news">
+                <!-- Weather news will be displayed here -->
+            </div>
+            <div id="detailed-metrics">
+                <!-- Detailed weather metrics will be displayed here -->
+            </div>
+            <div id="clothing-suggestion">
+                <!-- Clothing suggestions will be displayed here -->
+            </div>
+            <div id="air-quality">
+                <!-- Air quality information will be displayed here -->
+            </div>
+        </main>
+
+        <footer>
+            <p>Weather App © 2025</p>
+        </footer>
+    </div>
+    <script src="main.[contenthash].js"></script> <!-- Ensure this matches the output file -->
+</body>
+</html>
